@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> - netcoreapp31test</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="/">netcoreapp31test</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/Home/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Environment Variables</h1>
+    <div id="env">
+        <table border='1'>
+            <tr><td>Name</td><td>Value</td></tr>
+                <tr>
+                    <td>APPLICATIONINSIGHTS_CONNECTION_STRING</td>
+                    <td>InstrumentationKey=a63d0ee3-fa4d-4d14-bafd-4e2beda53c56;IngestionEndpoint=https://eastus-3.in.applicationinsights.azure.com/</td>
+                </tr>
+                <tr>
+                    <td>ASPNETCORE_ENVIRONMENT</td>
+                    <td>Development</td>
+                </tr>
+                <tr>
+                    <td>ASPNETCORE_HOSTINGSTARTUPASSEMBLIES</td>
+                    <td>Microsoft.ApplicationInsights.StartupBootstrapper</td>
+                </tr>
+                <tr>
+                    <td>ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>ASPNETCORE_URLS</td>
+                    <td>http://&#x2B;:80</td>
+                </tr>
+                <tr>
+                    <td>COREHOST_TRACE</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>COREHOST_TRACE_VERBOSITY</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>COREHOST_TRACEFILE</td>
+                    <td>/app/trace.txt</td>
+                </tr>
+                <tr>
+                    <td>DOTNET_RUNNING_IN_CONTAINER</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>DOTNET_USE_POLLING_FILE_WATCHER</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>HOME</td>
+                    <td>/root</td>
+                </tr>
+                <tr>
+                    <td>HOSTNAME</td>
+                    <td>42e0358add4d</td>
+                </tr>
+                <tr>
+                    <td>NUGET_FALLBACK_PACKAGES</td>
+                    <td>/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2</td>
+                </tr>
+                <tr>
+                    <td>NUGET_PACKAGES</td>
+                    <td>/root/.nuget/fallbackpackages2</td>
+                </tr>
+                <tr>
+                    <td>PATH</td>
+                    <td>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin</td>
+                </tr>
+                <tr>
+                    <td>PWD</td>
+                    <td>/app</td>
+                </tr>
+        </table>
+    </div>
+    <h1>Loaded DLLs</h1>
+    <div id="dll">
+        <table border='1'>
+            <tr><td>Name</td><td>Value</td></tr>
+                <tr>
+                    <td>Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Antiforgery, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Antiforgery.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Authentication.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Authentication.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Authentication.Core, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Authentication.Core.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Authorization, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Authorization.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Authorization.Policy, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Authorization.Policy.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Components, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Components.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Connections.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Connections.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Cors, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Cors.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Cryptography.Internal, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Cryptography.Internal.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.DataProtection, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.DataProtection.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.DataProtection.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.DataProtection.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Diagnostics, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Diagnostics.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Diagnostics.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Diagnostics.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.HostFiltering, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.HostFiltering.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Hosting, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Hosting.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Hosting.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Hosting.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Hosting.Server.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Html.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Html.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Http, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Http.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Http.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Http.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Http.Extensions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Http.Extensions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Http.Features, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Http.Features.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.HttpOverrides, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.HttpOverrides.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Metadata, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Metadata.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Mvc, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Mvc.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Mvc.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Mvc.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Mvc.ApiExplorer, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Mvc.ApiExplorer.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Mvc.Core, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Mvc.Core.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Mvc.Cors, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Mvc.Cors.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Mvc.DataAnnotations, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Mvc.DataAnnotations.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Mvc.Razor, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Mvc.Razor.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Mvc.TagHelpers, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Mvc.TagHelpers.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Mvc.ViewFeatures, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Mvc.ViewFeatures.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Razor, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Razor.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Razor.Runtime, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Razor.Runtime.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Routing, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Routing.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Routing.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Routing.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Server.IIS, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Server.IIS.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Server.IISIntegration, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Server.IISIntegration.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Server.Kestrel, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Server.Kestrel.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Server.Kestrel.Core, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Server.Kestrel.Core.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.StaticFiles, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.StaticFiles.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.AspNetCore.WebUtilities, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.AspNetCore.WebUtilities.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Caching.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Caching.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Caching.Memory, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Caching.Memory.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Configuration, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Configuration.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Configuration.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Configuration.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Configuration.Binder, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Configuration.Binder.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Configuration.CommandLine, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Configuration.CommandLine.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Configuration.EnvironmentVariables, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Configuration.EnvironmentVariables.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Configuration.FileExtensions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Configuration.FileExtensions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Configuration.Json, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Configuration.Json.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Configuration.UserSecrets, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Configuration.UserSecrets.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.DependencyInjection, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.DependencyInjection.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.DependencyInjection.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.FileProviders.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.FileProviders.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.FileProviders.Composite, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.FileProviders.Composite.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.FileProviders.Physical, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.FileProviders.Physical.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.FileSystemGlobbing, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.FileSystemGlobbing.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Hosting, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Hosting.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Hosting.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Hosting.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Localization.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Localization.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Logging, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Logging.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Logging.Abstractions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Logging.Abstractions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Logging.Configuration, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Logging.Configuration.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Logging.Console, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Logging.Console.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Logging.Debug, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Logging.Debug.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Logging.EventLog, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Logging.EventLog.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Logging.EventSource, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Logging.EventSource.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.ObjectPool, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.ObjectPool.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Options, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Options.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Options.ConfigurationExtensions, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Options.ConfigurationExtensions.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.Primitives, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.Primitives.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Extensions.WebEncoders, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Extensions.WebEncoders.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.JSInterop, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.JSInterop.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Net.Http.Headers, Version=3.1.12.0, Culture=neutral, PublicKeyToken=adb9793829ddae60</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/Microsoft.Net.Http.Headers.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Win32.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/Microsoft.Win32.Primitives.dll</td>
+                </tr>
+                <tr>
+                    <td>Microsoft.Win32.Registry, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/Microsoft.Win32.Registry.dll</td>
+                </tr>
+                <tr>
+                    <td>netcoreapp31test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</td>
+                    <td>/app/bin/Debug/netcoreapp3.1/netcoreapp31test.dll</td>
+                </tr>
+                <tr>
+                    <td>netcoreapp31test.Views, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</td>
+                    <td>/app/bin/Debug/netcoreapp3.1/netcoreapp31test.Views.dll</td>
+                </tr>
+                <tr>
+                    <td>netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/netstandard.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Buffers.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Collections, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Collections.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Collections.Concurrent, Version=4.0.15.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Collections.Concurrent.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Collections.Immutable.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Collections.Specialized, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Collections.Specialized.dll</td>
+                </tr>
+                <tr>
+                    <td>System.ComponentModel, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.ComponentModel.dll</td>
+                </tr>
+                <tr>
+                    <td>System.ComponentModel.Annotations, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.ComponentModel.Annotations.dll</td>
+                </tr>
+                <tr>
+                    <td>System.ComponentModel.Primitives, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.ComponentModel.Primitives.dll</td>
+                </tr>
+                <tr>
+                    <td>System.ComponentModel.TypeConverter, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.ComponentModel.TypeConverter.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Console, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Console.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Diagnostics.Debug, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Diagnostics.Debug.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Diagnostics.DiagnosticSource.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Diagnostics.StackTrace, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Diagnostics.StackTrace.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Diagnostics.Tracing, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Diagnostics.Tracing.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Drawing.Primitives.dll</td>
+                </tr>
+                <tr>
+                    <td>System.IO.FileSystem, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.IO.FileSystem.dll</td>
+                </tr>
+                <tr>
+                    <td>System.IO.FileSystem.Watcher, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.IO.FileSystem.Watcher.dll</td>
+                </tr>
+                <tr>
+                    <td>System.IO.Pipelines, Version=4.0.2.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.AspNetCore.App/3.1.12/System.IO.Pipelines.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Linq, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Linq.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Linq.Expressions.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Memory, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Memory.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Net.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Net.Primitives.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Net.Sockets, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Net.Sockets.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Net.WebSockets, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Net.WebSockets.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Numerics.Vectors.dll</td>
+                </tr>
+                <tr>
+                    <td>System.ObjectModel, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.ObjectModel.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Private.CoreLib.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Private.Uri, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Private.Uri.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Private.Xml, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Private.Xml.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Private.Xml.Linq, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Private.Xml.Linq.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Reflection.Emit.ILGeneration, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Reflection.Emit.ILGeneration.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Reflection.Emit.Lightweight, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Reflection.Emit.Lightweight.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Reflection.Metadata, Version=1.4.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Reflection.Metadata.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Reflection.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Reflection.Primitives.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Resources.ResourceManager, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Resources.ResourceManager.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Runtime, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Runtime.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Runtime.CompilerServices.Unsafe.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Runtime.Extensions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Runtime.Extensions.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Runtime.InteropServices, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Runtime.InteropServices.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Runtime.InteropServices.RuntimeInformation, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Runtime.InteropServices.RuntimeInformation.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Security.Claims, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Security.Claims.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Security.Cryptography.Algorithms, Version=4.3.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Security.Cryptography.Algorithms.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Security.Cryptography.Csp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Security.Cryptography.Csp.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Security.Cryptography.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Security.Cryptography.Primitives.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Security.Cryptography.X509Certificates, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Security.Cryptography.X509Certificates.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Security.Principal, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Security.Principal.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Text.Encoding.Extensions, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Text.Encoding.Extensions.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Text.Encodings.Web, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Text.Encodings.Web.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Text.Json, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Text.Json.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Text.RegularExpressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Text.RegularExpressions.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Threading, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Threading.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Threading.Tasks, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Threading.Tasks.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Threading.Thread, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Threading.Thread.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Threading.ThreadPool, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Threading.ThreadPool.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Threading.Timer, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Threading.Timer.dll</td>
+                </tr>
+                <tr>
+                    <td>System.Xml.XDocument, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</td>
+                    <td>/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.12/System.Xml.XDocument.dll</td>
+                </tr>
+        </table>
+    </div>
+</body>
+</html>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - netcoreapp31test - <a href="/Home/Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+    
+</body>
+</html>
